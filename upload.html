@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+
+    <title>Blockly案例开发</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+    <style type="text/css">
+        form{
+            margin-top: 50px;
+        }
+        table{
+            margin-top: -30px;
+            width: 100%;
+        }
+        .row2{
+            width: 18%;
+            background-color: rgb(100,204,255);
+            height: 1200px;
+            margin-top: -5px;
+        }
+        .middle{
+            text-align: center;
+            vertical-align: top;
+        }
+        #title{
+            margin-top: ;
+        }
+    </style>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td colspan="3"><img src="img/part2_picture.png" width="100%" height="100px" style="margin-bottom: -5px;"></td>
+    </tr>
+    <tr>
+        <td class="row2"></td>
+        <td class="middle">
+<form class="form-horizontal" action="upload_file.php" method="post" enctype="multipart/form-data">
+<div class="container">
+    <div class="header clearfix">
+        <nav>
+            <ul class="nav nav-pills pull-right">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">About</a></li>
+                <li role="presentation"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h3 class="text-muted">Blockly案例开发</h3>
+    </div>
+
+    <div class="jumbotron">
+        <!--<h1>Jumbotron heading</h1>-->
+        <p class="lead">Blockly是一个功能非常强大的开发环境，同时也是一款非常适合为教育教学进行服务的软件，为教师和教育相关从业者提供了功能强大、容易上手的可视化编程平台。为推动Blockly的进一步发展，促进Blockly在教育领域中的推广和使用，共同打造Blockly在教育领域进行开发、学习、协作的良好的生态系统，现面向各位教师诚挚的征集Blockly教学案例。</p>
+        <!--<p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>-->
+    </div>
+
+    <!--<div class="row marketing"></div>-->
+
+    <div class="input-group">
+        <span class="input-group-addon">姓 名：</span>
+        <input type="text" id="name" class="form-control" placeholder=" name">
+    </div>
+    <br>
+    <div class="input-group">
+        <span class="input-group-addon">学 校：</span>
+        <input type="text" id="school" class="form-control" placeholder=" school">
+    </div>
+    <br>
+    <div class="input-group">
+        <span class="input-group-addon">邮 箱：</span>
+        <input type="text" id="mail" class="form-control" placeholder=" e-mail">
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">案例名称：</label>
+        <div class="col-sm-10">
+            <input class="form-control" id="case_name" type="text" value="请输入案例名称">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">案例描述：</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" rows="8" id="case_desc"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">其它建议：</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" rows="8" id="suggestion"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label" for="file">案例代码：</label>
+        <div class="col-sm-10">
+            <input id="file" type="file" value="file">
+        </div>
+    </div>
+            <div style="width:40%;margin:auto;">
+                <input class="btn btn-success" type="submit" name="submit" value="提交">
+                <input class="btn btn-default" style="float:right;" type="reset" name="reset" value="重置">
+            </div>
+    <br>
+    <footer class="footer">
+        <p align="left">&copy; 2017 dslab, lzu.</p>
+    </footer>
+
+</div> <!-- /container -->
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+</form>
+    </td>
+    <td class="row2"></td>
+    </tr>
+</table>
+</body>
+</html>
