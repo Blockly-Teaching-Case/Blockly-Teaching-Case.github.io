@@ -7,6 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
+    <!--<link rel="icon" href="../../favicon.ico">-->
 
     <title>Blockly案例开发</title>
 
@@ -33,85 +34,84 @@
 <body>
 
 <form class="form-horizontal" action="upload_file.php" method="post" enctype="multipart/form-data">
-<div class="container">
-    <div class="header clearfix">
-        <nav>
-            <ul class="nav nav-pills pull-right">
-                <li role="presentation" class="active"><a href="index.html">Home</a></li>
-                <li role="presentation"><a href="about.html">About</a></li>
-                <li role="presentation"><a href="contact.html">Contact</a></li>
-				<li role="presentation"><a href="https://blockly-games.appspot.com/">Games</a></li>
-            </ul>
-        </nav>
-        <h3 class="text-muted">Blockly案例开发</h3>
-    </div>
+    <div class="container">
+        <div class="header clearfix">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="index.html">简介</a></li>
+                    <li role="presentation"><a href="about.html">案例提交</a></li>
+                    <li role="presentation"><a href="contact.html">关于</a></li>
 
-    <div class="jumbotron">
-        <p align="left">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blockly是一个功能非常强大的开发环境，同时也是一款非常适合为教育教学进行服务的软件，为教师和教育相关从业者提供了功能强大、容易上手的可视化编程平台。为推动Blockly的进一步发展，促进Blockly在教育领域中的推广和使用，共同打造Blockly在教育领域进行开发、学习、协作的良好的生态系统，现面向各位教师诚挚的征集Blockly教学案例。
-        </p>
-    </div>
-
-    <div class="input-group">
-        <span class="input-group-addon">姓 名：</span>
-        <input type="text" id="name" class="form-control" placeholder=" name">
-    </div>
-    <br>
-    <div class="input-group">
-        <span class="input-group-addon">学 校：</span>
-        <input type="text" id="school" class="form-control" placeholder=" school">
-    </div>
-    <br>
-    <div class="input-group">
-        <span class="input-group-addon">邮 箱：</span>
-        <input type="text" id="mail" class="form-control" placeholder=" e-mail">
-    </div>
-    <br>
-    <hr>
-    <br>
-    <div class="form-group">
-        <label class="col-sm-2 control-label">案例名称：</label>
-        <div class="col-sm-10">
-            <input class="form-control" id="case_name" type="text" value="请输入案例名称">
+					<li role="presentation"><a href="blockly-games.html">Blockly Games</a></li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Blockly案例开发</h3>
         </div>
-    </div>
-    <div class="form-group">
-        <label class="col-sm-2 control-label">案例描述：</label>
-        <div class="col-sm-10">
-            <textarea class="form-control" rows="8" id="case_desc"></textarea>
+
+        <div class="jumbotron">
+            <h2 style="font-size: 40px">Blockly案例征集令</h2>
+            <hr>
+            <p align="left">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;作为一款功能强大、可扩展性强的可视化编程工具，Blockly拥有非凡的潜力为今后的信息技术教育和跨学科教学做出贡献。但正如没有枝叶的树木难以繁茂，Blockly平台核心功能强大，却缺乏教学案例。
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;万事俱备，只欠东风。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为了推动Blockly的进一步发展，充实Blockly的内容和细节，共同打造Blockly在教育领域内进行开发、学习、交流、协作的良好生态系统。
+                <font face="黑体">现发起Blockly教学案例征集活动，无论您从事何种学科教学，无论您是否有编程基础，只要您有好的想法、建议或需求，您都可以参与到活动中来。我们将会提供完善的文档和工具，帮助您实现您的想法。</font>
+            </p>
+            <hr style=" height:2px;border:none;border-top:1px dotted;" />
+            <p align="left">我们所征集的案例分为3类，</p>
+            <p align="left">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<b>第一类：</b>在现有 Blockly及各子环境（如blockly-games）的基础上，结合您教学学科的知识点、生活小常识、有趣的故事等进行案例的设计，这一类案例直接运用于课堂教学，请您发挥想象力，让它们尽量生动、有创意、新鲜、有趣；
+                <br>
+                <a class="learnmore" href="#" role="button">了解更多 &raquo;</a>
+                <br>
+            </p>
+            <p align="left">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>第二类：</b>在某个具体的Blockly环境下，向其中添加模块，将您设计的模块提供给我们，并进行目的、功能的描述。
+                <br>
+                <img src="img/1.png" class="img2">
+                <img src="img/2.png" class="img2">
+                <img src="img/3.png" class="img2">
+                <img src="img/4.png" class="img2">
+                <br>
+                <a class="learnmore" href="#" role="button">了解更多 &raquo;</a>
+                <br>
+            </p>
+            <p align="left">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>第三类：</b>Blockly环境开发，如果您有想法来开发一个新的Blockly小环境，类似blockly-games中的各种小游戏，如迷宫、拼图、乌龟之类的案例，希望您将您的想法或作品分享给大家。
+                <br>
+                <img src="img/5.png" class="img3">
+                <img src="img/6.png" class="img3">
+                <br>
+                <a class="learnmore" href="#" role="button">了解更多 &raquo;</a>
+                <br>
+            </p>
+            <p align="left">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;针对第二类、第三类案例，如果您精力或时间有限，您也可以只给我们提供需求和想法，将您渴望的功能告诉我们，由我们来进行设计实现。
+            </p>
+            <p align="left">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们会仔细研究您所提交的案例，积极采纳您所提出的建议，经过我们的筛选之后，
+                <font face="黑体" style="font-weight: bolder">如果您的案例、模块、二次开发或者您的想法被选入案例库，谷歌公司会提供相应的荣誉和奖励。</font>
+            </p>
+            <hr style=" height:2px;border:none;border-top:1px dotted;" />
+            <p align="left">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为了 Blockly 的明天，为了让更多一线教师和学生更好的利用如此强大的工具，我们诚挚的希望得到您帮助与支持！
+                <font face="黑体" style="font-weight: bolder">星星之火，可以燎原，也许您的一个思维的火花，可能点燃中国信息技术教育变革的熊熊大火。</font>
+            </p>
+            <a type="button" class="btn btn-sm btn-info" href="about.html">加入我们</a>
+            <!--<p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>-->
         </div>
-    </div>
-    <div class="form-group">
-        <label class="col-sm-2 control-label">其它建议：</label>
-        <div class="col-sm-10">
-            <textarea class="form-control" rows="8" id="suggestion"></textarea>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="col-sm-2 control-label" for="file">案例代码：</label>
-        <div class="col-sm-10">
-            <input id="file" type="file" value="file">
-        </div>
-    </div>
-    <tr>
-        <td colspan="2">
 
-            <div style="width:40%;margin:auto;">
-                <input class="btn btn-success" type="submit" name="submit" value="提交">
-                <input class="btn btn-default" style="float:right;" type="reset" name="reset" value="重置">
-            </div>
-        </td>
-    </tr>
-    <br>
-    <footer class="footer">
-        <p>&copy; 2017 dslab, lzu.</p>
-    </footer>
+        <br>
+        <footer class="footer">
+            <p>&copy; 2017 Blockly Alliance Working Group.</p>
+        </footer>
 
-</div> <!-- /container -->
+    </div> <!-- /container -->
 
 
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="js/ie10-viewport-bug-workaround.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
 </form>
 </body>
 </html>
