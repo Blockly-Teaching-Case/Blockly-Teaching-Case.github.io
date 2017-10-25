@@ -7,7 +7,6 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <!--<link rel="icon" href="../../favicon.ico">-->
 
     <title>Blockly案例开发</title>
 
@@ -19,29 +18,6 @@
 
     <!-- Custom styles for this template -->
     <link href="css/jumbotron-narrow.css" rel="stylesheet">
-    <style type="text/css">
-        form{
-            margin-top: 50px;
-        }
-        table{
-            margin-top: -30px;
-            width: 100%;
-        }
-        .row2{
-            width: 18%;
-            background-color: rgb(100,204,255);
-            height: 1200px;
-            margin-top: -5px;
-        }
-        .middle{
-            text-align: center;
-            vertical-align: top;
-        }
-        #title{
-            margin-top: ;
-        }
-    </style>
-
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]>
     <script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -55,33 +31,26 @@
 </head>
 
 <body>
-<table border="0" cellpadding="0" cellspacing="0">
-    <tr>
-        <td colspan="3"><img src="img/part2_picture.png" width="100%" height="100px" style="margin-bottom: -5px;"></td>
-    </tr>
-    <tr>
-        <td class="row2"></td>
-        <td class="middle">
+
 <form class="form-horizontal" action="upload_file.php" method="post" enctype="multipart/form-data">
 <div class="container">
     <div class="header clearfix">
         <nav>
             <ul class="nav nav-pills pull-right">
-                <li role="presentation" class="active"><a href="#">Home</a></li>
-                <li role="presentation"><a href="#">About</a></li>
-                <li role="presentation"><a href="#">Contact</a></li>
+                <li role="presentation"><a href="index.html">简介</a></li>
+                <li role="presentation" class="active"><a href="upload.html">案例提交</a></li>
+                <li role="presentation"><a href="about.html">关于</a></li>
+				<li role="presentation"><a href="blockly-games.html">Blockly Games</a></li>
             </ul>
         </nav>
         <h3 class="text-muted">Blockly案例开发</h3>
     </div>
 
     <div class="jumbotron">
-        <!--<h1>Jumbotron heading</h1>-->
-        <p class="lead">Blockly是一个功能非常强大的开发环境，同时也是一款非常适合为教育教学进行服务的软件，为教师和教育相关从业者提供了功能强大、容易上手的可视化编程平台。为推动Blockly的进一步发展，促进Blockly在教育领域中的推广和使用，共同打造Blockly在教育领域进行开发、学习、协作的良好的生态系统，现面向各位教师诚挚的征集Blockly教学案例。</p>
-        <!--<p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>-->
+        <p align="left">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过对Blockly和Scratch Blocks进行教学案例开发，结合二者各自的优势，推动它们的进一步发展，进而吸引更多的使用者加入到案例开发中来，让不同年龄层的学生都能从中受益，共同打造Blockly和Scratch Blocks在教育领域内开发、学习、交流、协作的良好生态系统，现面向广大师生诚挚的征集教学案例。
+        </p>
     </div>
-
-    <!--<div class="row marketing"></div>-->
 
     <div class="input-group">
         <span class="input-group-addon">姓 名：</span>
@@ -124,13 +93,18 @@
             <input id="file" type="file" value="file">
         </div>
     </div>
+    <tr>
+        <td colspan="2">
+
             <div style="width:40%;margin:auto;">
                 <input class="btn btn-success" type="submit" name="submit" value="提交">
                 <input class="btn btn-default" style="float:right;" type="reset" name="reset" value="重置">
             </div>
+        </td>
+    </tr>
     <br>
     <footer class="footer">
-        <p align="left">&copy; 2017 dslab, lzu.</p>
+        <p>&copy; 2017 Blockly Alliance Working Group.</p>
     </footer>
 
 </div> <!-- /container -->
@@ -139,9 +113,5 @@
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="js/ie10-viewport-bug-workaround.js"></script>
 </form>
-    </td>
-    <td class="row2"></td>
-    </tr>
-</table>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Blockly-Teaching-Case.github.io.iml" filepath="$PROJECT_DIR$/.idea/Blockly-Teaching-Case.github.io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/blockly_web.iml" filepath="$PROJECT_DIR$/.idea/blockly_web.iml" />
     </modules>
   </component>
 </project>
